@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>5.10 random numbers</title>
+</head>
+
+<body>
+  <h1>5.10 Random numbers</h1>
+  <section>
+    <h2>Notes</h2>
+    <h3>Intro</h3>
+    <p>Random numbers are useful on software development for many reasons - game mecahanics, generating
+      usernames/passwords, anytime you need something seemingly unpredictible.</p>
+    <p>Pseudo-random numbers - computers are just big calculators solving formulas and can't create truly random
+      numbers, but insead, use an algorithm that generates that seems random</p>
+    <h3>Random numbers in JS</h3>
+    <P>Math.random() is a function that returns a pseudo-random number between 0 and 1, not including 1</P>
+    <p>Math.floor() is a function that takes a decimal number and rounds it down - chops off the decimal part</p>
+    <button onclick="alert(Math.random())">Test <code>Math.random()</code></button>
+    <button onclick="alert(Math.floor(3.14159))">Test <code>Math.floor()</code></button>
+    <h3>Random number calculations</h3>
+    <p>To produce a random integer from a min value to a max value (including the min max) use this calculation</p>
+    <p>Math.floor(Math.random() * (max + 1 )) + min</p>
+    <h3>Example</h3>
+    <p>Generate a random number from 1 to 10 adn store it in a variable</p>
+    <p>var randnum = Math.floor(Math,random() * 11) + 1;</p>
+    <button onclick="example()">Generate random num from 1 to 10</button>
+    <script>
+      function example() {
+        var randnum = Math.floor(Math.random() * 10) + 1;
+        alert(randnum);
+      }
+    </script>
+  </section>
+</body>
+
+</html>
