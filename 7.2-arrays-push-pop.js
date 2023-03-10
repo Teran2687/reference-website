@@ -34,12 +34,13 @@ function problem1() {
   daysOfTheWeek.push("Saturday");
   daysOfTheWeek.push("Sunday");
   var weekend = [];
-  daysOfTheWeek.pop();
-  daysOfTheWeek.pop();
-  weekend.push();
-  weekend.push();
+  var lastDay = daysOfTheWeek.pop();
+  weekend.push(lastDay);
+  lastDay = daysOfTheWeek.pop();
+  weekend.push(lastDay);
 }
 
 function printdays() {
-  console.log()
+  console.log(daysOfTheWeek);
+  console.log(weekend);
 }
